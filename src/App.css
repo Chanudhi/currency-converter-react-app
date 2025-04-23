@@ -1,0 +1,125 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); /* Purple to blue gradient */
+}
+
+.converter-container {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 500px;
+  border: 1px solid #e0e0e0;
+  animation: fadeIn 0.5s ease-out;
+}
+
+h1 {
+  color: #6a11cb; /* Purple to match gradient */
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.converter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input-group {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+}
+
+.amount-input {
+  flex: 1;
+  padding: 0.9rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  outline: none;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.amount-input:focus {
+  border-color: #ff6b6b; /* Coral red for focus */
+  box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.1);
+}
+
+.currency-select {
+  padding: 0.9rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+  min-width: 100px;
+  color: #333;
+}
+
+.currency-select:focus {
+  border-color: #4ecdc4; /* Turquoise for focus */
+  box-shadow: 0 0 0 3px rgba(78, 205, 196, 0.1);
+}
+
+.loading {
+  color: #555;
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+.exchange-rate {
+  color: #333;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+  padding: 0.8rem;
+  background-color: #f9f9f9;
+  border-radius: 0.5rem;
+  border: 1px solid #e0e0e0;
+}
+
+/* Add a colorful accent to the title */
+h1::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #6a11cb); /* Multi-color gradient */
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+/* Add hover effects to inputs */
+.amount-input:hover {
+  border-color: #ff6b6b; /* Coral red on hover */
+}
+
+.currency-select:hover {
+  border-color: #4ecdc4; /* Turquoise on hover */
+}
+
+/* Add a subtle animation to the container */
+.converter-container {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
