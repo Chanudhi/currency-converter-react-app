@@ -1,9 +1,9 @@
 {
-  "name": "currency-converter",
+  "name": "currencyconverter",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://chanudhi.github.io/currency-converter-react-app",
+  "homepage": "https://chanudhi.github.io/currencyConverter",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -26,7 +26,7 @@
     "eslint": "^9.21.0",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",
-    "gh-pages": "^6.1.1",
+    "gh-pages": "^6.3.0",
     "globals": "^15.15.0",
     "vite": "^6.2.0"
   }
